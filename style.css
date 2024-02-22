@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.college-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #312f2f;
+    line-height: 1.6;
+}
+
+.note-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.note-button {
+    flex: 1 0 200px;
+    padding: 15px;
+    background-color: #001a67;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.note-button:hover {
+    background-color: #004080;
+}
+
+.personal-website-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.personal-website-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.personal-website-button:hover {
+    background-color: #007bb5;
+}
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ /* Apply animation to specific elements */
+ header,
+ .container,
+ .note-button,
+ .personal-website-button {
+     animation: fadeIn 1s ease-in-out;
+ }
+
+ /* Add animation for the background color change */
+ body {
+     transition: background-color 1s ease-in-out;
+ }
