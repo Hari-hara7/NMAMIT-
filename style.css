@@ -2,12 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #000000;
 }
 
 header {
-    background-color: #ffffff;
-    color: #fff;
+    background-color: #000000;
+    color: #fff9f9;
     padding: 20px 0;
     text-align: center;
 }
@@ -20,19 +20,20 @@ header {
 h1 {
     margin: 10px 0;
     font-size: 2em;
+    color: #ffffff;
 }
 
 .container {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 p {
-    color: #312f2f;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -46,8 +47,8 @@ p {
 .note-button {
     flex: 1 0 200px;
     padding: 15px;
-    background-color: #001a67;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
@@ -56,7 +57,7 @@ p {
 }
 
 .note-button:hover {
-    background-color: #004080;
+    background-color: #0b92e6;
 }
 
 .personal-website-section {
@@ -67,8 +68,8 @@ p {
 .personal-website-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     border: none;
@@ -78,7 +79,7 @@ p {
 }
 
 .personal-website-button:hover {
-    background-color: #007bb5;
+    background-color: #0094d9;
 }
  @keyframes fadeIn {
      from {
@@ -102,3 +103,23 @@ p {
  body {
      transition: background-color 1s ease-in-out;
  }
+ /* Hide main content initially */
+ #main-content {
+     display: none;
+ }
+
+   @keyframes fadeIn {
+       from {
+           opacity: 0;
+       }
+
+       to {
+           opacity: 1;
+       }
+   }
+
+   /* Apply animation to title */
+   h1 {
+       opacity: 0;
+       animation: fadeIn 1.5s ease forwards;
+   }
