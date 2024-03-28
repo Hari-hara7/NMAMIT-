@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -43,20 +43,23 @@ header {
 
 h1 {
     font-size: 24px;
+   
 }
 
 header nav ul {
     list-style-type: none;
+    color: #fff;
 }
 
 header nav ul li {
     display: inline;
     margin-right: 20px;
+  
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+  
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -79,13 +82,13 @@ section {
 
 section h2 {
     margin-bottom: 20px;
-    color: #000000;
+   
     font-size: 24px;
 }
 
 section p {
     margin-bottom: 20px;
-    color: #000000;
+  
 }
 
 /* Note buttons styles */
@@ -98,7 +101,7 @@ section p {
     padding: 10px 20px;
     margin-right: 10px;
     background-color: #000000;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 25px;
     transition: background-color 0.3s ease;
@@ -112,7 +115,7 @@ section p {
 .resource-button {
     padding: 12px 24px;
     background-color: #000000;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -371,4 +374,69 @@ footer {
         margin-bottom: 0;
         margin-right: 10px; /* Add some spacing between buttons */
     }
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #514e4e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.logo-img {
+    width: 4em; /* Set width relative to the font size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some spacing between the heading and image */
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium font weight */
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #000000;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    margin-right: 10px; /* Adjust the spacing between the menu symbol and menu items */
+    cursor: pointer;
+    font-size: 24px; /* Adjust the font size of the menu symbol */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Remove margin for the last menu item */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Adjust the font size of menu items */
+}
+
+.menu a:hover {
+    color: #007bff; /* Change color on hover */
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium font weight */
+    font-size: 2.5rem; /* Adjust size as needed */
+    color: #000000;
+    text-align: center;
 }
