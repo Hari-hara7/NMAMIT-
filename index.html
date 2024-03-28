@@ -4,49 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMAMIT</title>
-<link rel="stylesheet" href="style.css">
-        <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.JoySX84IBtS_FNQUJeOFBQHaHa&pid=Api&P=0&h=220" type="image/x-icon">
+    <title>Academic Pal - Notes for NMAM Institute of Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://tse2.mm.bing.net/th?id=OIP.JoySX84IBtS_FNQUJeOFBQHaHa&pid=Api&P=0&h=220" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcIYiChBM1uH2kGHNhdWFl15RnahTOwqHkTQ&usqp=CAU" alt="College Logo" class="college-logo">
-        
-
-<link rel="shortcut icon" href="" type="image/x-icon">
-
-
+        <div class="header-container">
+          
+            <div class="logo-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDizIH8HMP5y6qTldEpO8VZEd6X0UiSrYFw&usqp=CAU" alt="Academic Pal Logo" class="logo-img">
+                <h1>Academic Pal</h1>
+            </div>
+            <nav class="navbar">
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                <ul class="menu">
+                    <li><a href="#about">About &#128220;</a></li>
+                    <li><a href="#notes">Notes &#128218;</a></li>
+                    <li><a href="#resources">Resources &#128209;</a></li>
+                    <li><a href="#contact">Contact &#128241;</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
-        <p>Download notes easily by clicking on the buttons below:</p>
+        <section id="about">
+            <h2>About Academic Pal</h2>
+            <p>Welcome to Academic Pal, your go-to platform for accessing study materials and notes specifically curated for NMAM Institute of Technology. Our mission is to facilitate learning and academic excellence by providing high-quality resources to students.</p>
+        </section>
 
-        <div class="note-buttons">
-            <!-- Physics Cycle Notes Button -->
-            <a href="https://hari-hara7.github.io/physics-cycle-notes/"class="note-button"
-                target="_blank">Physics Cycle   Notes</a>
+        <section id="notes">
+            <h2>Download Notes</h2>
+            <div class="note-buttons">
+                <a href="https://hari-hara7.github.io/physics-cycle-notes/" class="note-button" target="_blank">Physics Cycle Notes</a>
+                <a href="https://hari-hara7.github.io/new-chemistry/" class="note-button" target="_blank">Chemistry Cycle Notes</a>
+                <!-- Add more note buttons for other subjects -->
+            </div>
+            <p>Access our comprehensive collection of study notes for various subjects. Prepare effectively for your exams and excel in your academic journey.</p>
+        </section>
 
-            <!-- Chemistry Cycle Notes Button -->
-            <a href="https://hari-hara7.github.io/new-chemistry/" class="note-button"
-                target="_blank">Chemistry Cycle Notes</a>
-
-            <!-- Add more buttons for other subjects if needed -->
-        </div>
-
-        <p>
-            This website provides a convenient way for students to access and download notes for their studies. Simply
-            click on the buttons above to download the notes for the respective subjects.
-        </p>
-
-        <div class="personal-website-section">
-            <p>Check out Academic pal website for more academic resources and tools:</p>
-            <button class="personal-website-button" onclick="window.open('https://academicpal.netlify.app/', '_blank')">
-                Visit Academicpal Website
-            </button>
-        </div>
+        <section id="resources">
+            <h2>Academic Resources</h2>
+            <p>Explore additional academic resources and tools to enhance your learning experience:</p>
+            <button class="resource-button" onclick="window.open('https://academicpal.netlify.app/', '_blank')">Visit Academic Pal Website</button>
+        </section>
     </div>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Academic Pal</p>
+                <p>Karkala Taluk, Nitte, Karnataka, India - 574110</p>
+                <p>Email: info@academicpal.com</p>
+                <p>Phone: +91-7989777877</p>
+            </div>
+            <div class="social-media">
+                <h2>Connect with Us</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/placement-nmamit-nittedu2022?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="glowing">&#128198;</span> LinkedIn</a></li>
+                <li><a href="https://x.com/nmamitnitte?t=JCf1zeymfw9jrSnRDg0BiA&s=08"><span class="glowing">&#128172;</span> Twitter</a></li>
+                <li><a href="https://www.instagram.com/nmamit_nitte?igsh=Ymt5azdkcjFuMmR2"><span class="glowing">&#128247;</span> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Academic Pal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+    </script>
 </body>
 
 </html>
-
